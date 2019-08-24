@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ga" xmlns="http://www.w3.org/1999/xhtml">
+<add name="Access-Control-Allow-Origin" value="*" />
+<add name="Access-Control-Allow-Headers" value="Content-Type" />
+<add name="Access-Control-Allow-Headers" value="x-requested-with" /> <!-- Add me! -->
+   <meta charset="UTF-8" />
+   <!-- <script src="./scripts/typeWriter.js-master/typeWriter.js"></script> -->
+   <head>
+      <title>Projects</title>
+      <!-- <link rel="stylesheet" href="./assets/css/location-styles.css" /> -->
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      <link
+         rel="stylesheet"
+         href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+         crossorigin="anonymous"
+         />
+      
+      <script src="./js/jquery.js"></script>
+      <link
+         rel="stylesheet"
+         href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+         crossorigin="anonymous"
+         />
+      <link rel="shortcut icon" href="images/favicon.ico" />
+      <link
+         href="https://fonts.googleapis.com/css?family=Irish+Grover&display=swap"
+         rel="stylesheet"
+         />
+      <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+      <link rel="stylesheet" type="text/css" href="css/loc-style.css" />
+      <link rel="stylesheet" type="text/css" href="css/tall-order.css" />
+      <link rel="stylesheet" type="text/css" href="css/history.css" />
+      <link rel="stylesheet" type="text/css" href="css/chat.css" />
+      <!-- <script src="./assets/scripts/jquery.js"></script> -->
+   </head>
+   <script>
+      function loadIt() {
+        setTimeout(function () {
+          var body = document.getElementById('toLoad');
+          body.className += 'loaded';
+          console.log("load spinner visible?")
+        }, 000); //add for curtains intro
+      }
+      
+   </script>
+   <body  onload="loadIt()" id="toLoad">
+     
+     
+      <!-- close hold-frame-->
+      <div class="wrapper">
+         <div id="loader-wrapper">
+            <div id="loader"></div>
+            <div class="loader-section section-left">
+            </div>
+            <div class="loader-section section-right"></div>
+         </div>
+         <div class="box header">
+            <div class="levelDescription">Krugerhaus
+            </div>
+                <div id="province-details-container">
+                    <div id="province-emblem">
+                    <div id="province-title">Cúige</div>
+
+                    </div>
+                </div>
+                <div id="county-details-container">
+                        <div id="county-emblem">
+                        <div id="county-title">Contae</div>
+
+                        </div>
+    
+                </div>
+         </div>
+         <div class="box content ">
+          
+            <div id="tall-order">
+               <div id="stage"></div>
+               <div id="stageBG">
+                    <div class="cubes"></div>
+
+            </div>
+            
+            
+            <div id="sea-modal">
+                    <img src="./images/g0.png" alt="raidhairc na farraige">
+                    <p id="sea-info">Der Wald ist sehr stark hier!</p>
+                    <button id='sea-modal-button' class="btn  btn-info btn-lg mr-5">Klar</button>
+                </div>
+                <div id="map-menu">
+                    <img src="./images/g2.png" alt="an Irish landscape">
+                    <p id="map-info">Ó seo is feidir dul go:</p><div id="map-info-btns">
+        
+                        
+                    </div>
+                    <button id='close-map-menu-button' class="btn  btn-info btn-lg mr-5">síar</button>
+                </div>
+            </div>
+      
+        </div>
+         <!-- /home/devugees/Desktop/Ribo/tall-order/images/favicon.ico -->
+         <div class="container-fluid">
+      
+            <div class="row">
+               <div id="btn-menu">
+                  <div class="col-6 ">
+                     <!-- <image id="bg-img1" class="align-text-bottom" src="./assets/images/backgrounds/menuBGleft.png"> -->
+                     <div id="back-to-county">
+                        <i class="far fa-arrow-alt-circle-left fa-3x"></i>
+                     </div>
+                  </div>
+                  <div class="col-6 text-right  align-text-bottom">
+                     <!-- <image id="bg-img2" class="align-text-bottom align-right" src="./assets/images/backgrounds/menuBGRight.png"> -->
+                  </div>
+                  <div id="btn-panel">
+                     <button type="button" id="about" class="about btn  btn-info btn-lg mr-5">about
+                     </button>
+                     <button type="button" id="skip" class="skip btn btn-secondary btn-lg mr-5">next
+                     </button>
+                     <!-- <button type="button" id="start" class="start btn btn-info btn-lg mr-5">start -->
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      </div>
+      
+      <div class="modal">
+
+          <div class="modal-content">
+
+                <div class="modal-icon"></div>
+            </div>
+            <input type="text" id="ainm" placeholder="Kííí..."></input>
+            </div>
+        
+    <div id='door-troll'>..</div>
+      <!-- <link rel="stylesheet" href="./css/animate.min.css"> -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+         integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+         crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+         crossorigin="anonymous"></script>
+      <div id="on-top"></div>
+      </div>
+      <div class="box footer">
+            
+         <div id="output"></div>
+      </div>
+      </div>
+      <script
+         src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+         integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+         crossorigin="anonymous"
+         ></script>
+      <script
+         src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+         crossorigin="anonymous"
+         ></script>
+      <script src="./js/veue.js"></script>
+      <script src="./js/js-cookie-1.5.1/src/js.cookie.js"></script>
+      <script src="./js/tall-order.js"></script>
+      <script src="js/tota11y.min.js"></script>
+      <script src="js/translator.js"></script>
+      <script src="js/chat.js"></script>
+   </body>
+</html>

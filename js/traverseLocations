@@ -1,0 +1,1173 @@
+
+//rand transition text array: [`the winding roads eventually lead you to`,``,``,``,]
+//tá forc san mbóthar: téigh go a b no c?
+
+//derry5 down unmatched
+
+antrim3
+
+left:sea
+right:sea
+up:sea
+down: antrim6
+
+antrim6:
+left :sea
+right:sea
+up: antrim3
+down: antrim4
+
+antrim4:
+left : derry3
+right: antrim2
+up: antrim6
+down:antrim5
+
+
+antrim5:
+left :derry2
+right:antrim2
+up:antrim4
+down: antrim1
+
+
+antrim2:
+left :antrim5
+right:sea
+up:sea
+down:antrim1
+
+antrim1:
+left :derry5
+right:sea
+up:antrim5
+down: down2
+
+armagh2:
+left : monaghan4
+right: armagh6
+up: antrim1
+down:armagh3 
+
+armagh6:
+left :armagh2
+right:armagh1
+up:antrim1
+down:armagh3 
+
+armagh1:
+left :armagh6
+right:sea 
+up:antrim1
+down:armagh3 
+
+armagh3 :
+left : monaghan6
+right: sea
+up: armagh6
+down:armagh4
+
+armagh4:
+left :monaghan1
+right:armagh5
+up:armagh3 
+down:louth1
+
+armagh5:
+left :armagh4
+right:sea
+up:armagh3 
+down:louth2
+
+carlow4:
+left :laois6
+right: carlow5
+up:kidare F
+down: carlow2
+
+carlow5:
+left :carlow4
+right: wicklow1
+up: kildare2
+down: carlow 1
+
+carlow1:
+left :carlow2
+right:carlow3
+up:carlow5
+down:carlow6
+
+carlow2:
+left :kilkenny1
+right:carlow6
+up:carlow4
+down:kilkenny2
+
+carlow6:
+left :carlow2
+right:wexford4
+up: carlow3
+down: wexford1
+
+carlow3:
+left :carlow1
+right:wexford4
+up:carlow5
+down:carlow6
+
+
+cavan4:
+left :leitrm C
+right:fermanagh2
+up:fermanagh3
+down:leitrim3
+
+cavan6:
+left :cavan4
+right:fermanagh2
+up:fermanagh3
+down:longford6
+
+cavan3:
+left : cavan6
+right:fermanagh2
+up:fermanagh3
+down:cavan5
+
+cavan5:
+left :leitrim5
+right:cavan2
+up:cavan3
+down: westmeath2
+
+cavan2:
+left :cavan5
+right:louth5
+up:cavan1
+down:meath5
+
+cavan1:
+left :cavan5
+right:monaghan1
+up:monaghan5
+down:cavan2
+
+clare2:
+left :sea
+right: tipperary1
+up:galway5
+down:clare1
+
+clare1:
+left :sea
+right:clare4
+up:clare2
+down:clare3
+
+clare4:
+left :clare1
+right:tipperary1
+up:galway5
+down:clare6
+
+clare5:
+left :sea	
+right:clare3
+up:clare1
+down:sea
+
+clare3:
+left :clare5
+right:clare6
+up:clare1
+down:clare sea
+
+clare6:
+left :clare3
+right:tipperary1
+up:clare4
+down:limerick4
+
+cork2:
+left :sea
+right:cork1
+up:limerick4
+down:cork6
+
+cork1:
+left :cork2
+right:waterford2
+up:limerick5
+down:cork5
+
+cork5:
+left :cork6
+right:waterford2
+up:cork1
+down:cork6
+
+cork6:
+left :cork4
+right:sea
+up:cork5
+down:cork3
+
+cork3:
+left :cork4
+right:sea
+up:cork6
+down:sea
+
+cork4:
+left :cork3
+right:sea
+up:cork2
+down:sea
+
+derry6:
+left :donegal4
+right:derry1
+up:donegal5
+down:tyrone5
+
+derry1:
+left :derry6
+right:derry4
+up:sea
+down:derry2
+
+derry4:
+left :derry1
+right:derry3
+up:derry1
+down:derry2
+
+derry3:
+left :derry2
+right:antrim4
+up:derry4
+down:derry2
+
+derry2:
+left :tyrone2
+right:antrim5
+up:derry3
+down:derry5
+
+derry5:
+left :tyrone2
+right:antrim5
+up:derry2
+down:
+
+donegal6 :
+left :sea
+right:donegal5
+up:sea
+down:donegal1
+
+donegal5:
+left :sea
+right:sea
+up:sea
+down:donegal4
+
+donegal1:
+left :sea
+right:donegal4
+up:donegal6
+down:donegal2
+
+donegal2:
+left :sea
+right:donegal3
+up:donegal1
+down:fermanagh5
+
+donegal3:
+left :donegal2
+right:tyrone4
+up: donegal4 
+down:tyrone4
+
+donegal4:
+left :donegal1
+right:derry6
+up:donegal5
+down:donegal3
+
+down6:
+left :armagh2
+right:down5
+up:antrim1
+down:down4
+
+down5:
+left :down5
+right:down1
+up:antrim1
+down:down4
+
+down1:
+left :down5
+right:down2
+up:antrim1
+down:down4
+
+down4:
+left :armagh5
+right:sea
+up:armagh6
+down:louth2
+
+down3:
+left :down4
+right:sea
+up:down2
+down:down4
+
+down2:
+left :down1
+right:sea
+up:antrim1
+down:down3
+
+dublin6:
+left :meath3
+right:sea
+up:meath3
+down:dublin4
+
+dublin3:
+left :kildare3
+right:dublin4
+up:dublin6
+down:dublin5
+
+dublin4:
+left :dublin3
+right:dublin2
+up:dublin6
+down:dublin5
+
+dublin2:
+left :dublin4
+right:sea
+up:dublin6
+down:dublin5
+
+dublin5:
+left :kildare3
+right:sea
+up:dublin4
+down:dublin1
+
+dublin1 :
+left :kildare3
+right:sea
+up:dublin5
+down:wicklow2
+
+fermanagh3:
+left :leitrim1
+right:fermanagh6
+up:donegal3
+down:cavan4
+
+fermanagh6:
+left :leitrim3
+right:fermanagh5
+up:donegal3
+down:fermanagh2
+
+fermanagh5:
+left :fermanagh3
+right:tyrone4
+up:tyrone1
+down: fermanagh4
+
+fermanagh2:
+left :leitrim2
+right:fermanagh1
+up:fermanagh3
+down:cavan6
+
+fermanagh4:
+left :fermanagh3
+right:tyrone1
+up:fermanagh5
+down:fermanagh1
+
+fermanagh1 :
+left :fermanagh2
+right:monaghan3
+up:fermanagh4
+down:cavan6
+
+galway6:
+left :sea
+right:sea
+up:galway3
+down:sea
+
+galway3: 
+left :sea
+right:galway4
+up:mayo2
+down:galway6
+
+galway4:
+left :galway3
+right:galway2
+up:mayo1
+down:galway3
+
+galway2:
+left :galway4
+right:galway1
+up:mayo5
+down:sea
+
+galway1:
+left :galway2
+right:galway5
+up:mayo5
+down:sea
+
+galway5:
+left :galway1
+right:roscommon1
+up:roscommon3
+down:clare4
+
+kerry5:
+left :sea
+right:kerry3
+up:sea
+down:sea
+
+kerry3:
+left :kerry5
+right:kerry4
+up:kerry5
+down:sea
+
+kerry4:
+left :kerry3
+right:kerry6
+up:sea
+down:sea
+
+kerry6:
+left :kerry4
+right:cork2
+up:sea
+down:kerry1
+
+kerry1:
+left :kerry2
+right:cork2
+up:kerry6
+down:kerry2
+
+kerry2:
+left :sea
+right:kerry1
+up:kerry1
+down:sea
+
+  kildare5 :
+left :offaly5
+right:kildare6
+up:meath6
+down: kildare4 
+
+kildare6:
+left :kildare5
+right:dublin3
+up:meath3
+down:kildare3
+
+kildare4:
+left :offaly5
+right:kildare3
+up:kildare5
+down:kildare1
+
+kildare3:
+left :kildare4
+right:dublin3
+up:kildare6
+down:kildare2
+
+kildare1:
+left :laois6
+right:wicklow5
+up:kildare3
+down:kildare2
+
+kildare2:
+left :laois5
+right:wicklow4
+up:kildare1
+down:carlow 5
+
+kilkenny1:
+left :tipperary1
+right:kilkenny4
+up:laois4
+down:waterford3
+
+kilkenny4:
+left :tipperary1
+right:kilkenny2
+up:kilkenny1
+down:kilkenny6
+
+kilkenny2:
+left :kilkenny4
+right: carlow2
+up:laois4
+down:kilkenny3
+
+kilkenny6:
+left :tipperary4
+right:kilkenny3 
+up:kilkenny4
+down:waterford3
+
+kilkenny3:
+left :kilkenny6
+right:carlow2
+up:kilkenny2
+down:kilkenny5
+
+kilkenny5:
+left : waterford6
+right:wexford1
+up:kilkenny3
+down:waterford3
+
+laois3:
+left : offaly5
+right:laois5
+up:offaly6
+down:laois2
+
+laois5:
+left :laois3
+right:laois6
+up:laois6
+down:laois1
+
+laois6:
+left : laois5
+right:kildare4
+up:offaly6
+down:laois5
+
+laois2:
+left :tipperary1
+right:laois4
+up:laois3
+down:kilkenny1
+
+laois1:
+left : laois2
+right: kildare4
+up:laoise C
+down:laois4
+
+laois4:
+left :laoise D
+right:kildare2
+up:laoise E
+down:kilkenny1
+
+leitrim1 :
+left :sligo4
+right:fermanagh3
+up:sea	
+down:leitrim6
+
+leitrim6:
+left :sligo4
+right:fermanagh5
+up:leitrim1
+down:leitrim5
+
+leitrim5:
+left : roscommon6
+right: leitrim2
+up:leitrim6
+down:roscommon5
+
+leitrim2:
+left : leitrim5
+right:cavan6
+up:cavan4
+down:leitrim3
+
+leitrim3:
+left :roscommon5
+right:cavan5
+up:leitrim2
+down:leitrim4
+
+leitrim4:
+left :roscommon  E
+right:cavan5
+up:leitrim3
+down:longford6
+:
+limerick2:
+left :kerry6
+right:limerick6
+up:sea
+down:limerick3
+
+limerick6:
+left :limerick2
+right:limerick4
+up:clare6
+down:limerick1
+
+limerick4:
+left :limerick6
+right:tiperary C
+up:clare6
+down:cork1
+
+limerick1:
+left :limerick3
+right:tipperary6
+up:limerick2
+down:limerick5
+
+limerick3:
+left :kerry1
+right:limerick5
+up:limerick2
+down:limerick5
+
+limerick5:
+left :limerick3
+right:tipperary6
+up:limerick1
+down:cork2
+
+longford2:
+left :roscommon6
+right:longford6
+up:leitrim4
+down:longford3
+
+longford6:
+left :longford2
+right:longford5
+up:leitrim4
+down:longford4
+
+longford5:
+left :longford6
+right:meath5
+up:cavan5
+down:westmeath2
+
+longford3:
+left :roscommon5
+right:longford1
+up:longford2
+down:westmeath3
+
+longford1:
+left : longford3
+right:longford4
+up:longford2
+down:westmeath5
+
+longford4:
+left : longford1
+right: westmeath2
+up:longford6
+down:westmeath2
+
+louth1:
+left :monaghan6
+right: louth4
+up:armagh5
+down:louth3
+
+louth2:
+left :louth4
+right:sea
+up:sea
+down:louth4
+
+louth4:
+left :louth1
+right:louth2
+up:louth2
+down:           
+
+louth5:
+left :meath2
+right:louth3
+up:louth1
+down:meath2
+
+louth3:
+left :louth5
+right:louth6
+up:louth1
+
+down:meath2
+
+louth6:
+left :louth3
+right:sea
+up:louth1
+
+down:meath2
+
+mayo4:
+
+left :sea
+right:mayo3
+up:sea
+down:sea
+
+mayo3:
+left :mayo4
+right: mayo6
+up:sea
+down:mayo2
+
+mayo6:
+left :mayo3
+right:sligo3
+up:sea
+down:mayo5
+
+mayo2:
+left :sea
+right:mayo1
+up:mayo3
+down:galway4
+
+mayo1:
+left :mayo2
+right:mayo5
+up:mayo3
+down:galway5
+
+mayo5:
+left :mayo1
+right:roscommon1
+up:mayo6
+down:galway5
+
+meath5:
+left :westmeath2
+right:meath4
+up:cavan2
+down:meath4
+
+meath4:
+left :meath5
+right:meath2
+up:meath5
+down:meath6
+
+meath2:
+left :meath4
+right:meath2
+up:cavan2
+down:meath2
+
+meath1:
+left :meath4
+right: meath3
+up:meath2
+down:meath3
+
+meath6:
+left :westmeath1 
+right:meath3
+up:meath4
+down:kildare5
+
+meath3:
+left :meath6
+right:dublin3 
+up:meath1
+down:kildare6
+
+monaghan4:
+left : monaghan3
+right:armagh3 
+up:tyrone1
+down:monaghan3
+
+monaghan3:
+left :fermanagh1 
+right: monaghan5
+up:monaghan3
+down: monaghan5
+
+monaghan5:
+left :monaghan3
+right:monaghan6
+up:monaghan3
+down:monaghan2
+
+monaghan2:
+left :cavan6
+right: monaghan1
+up:monaghan5
+down:cavan3
+
+monaghan6:
+left :monaghan2
+right:armagh4
+up:armagh4
+down:monaghan1
+
+monaghan1:
+left :monaghan2
+right:louth1
+up:monaghan6
+down:meath2
+
+
+offaly1:
+
+left : roscommon1
+right:offaly5
+up:westmeath5
+down:offaly2
+
+offaly2:
+left :galway5
+right:offaly4
+up:offaly4
+down:offaly3
+
+offaly3:
+left :tipperary1
+right:offaly4
+up:offaly2
+down:tipperary1
+
+offaly4:
+left :offaly3
+right:offaly6
+up:offaly6
+down:tipperary2
+
+offaly5:
+left : offaly1
+right:kildare5
+up:westmeath6
+down:offaly6
+
+offaly6:
+left :offaly4
+right:kildare4
+up:offaly5
+down:laois6
+
+roscommon3 :
+left : mayo6
+right: roscommon4
+up:sligo6
+down:galway5
+
+roscommon4:
+left :roscommon3
+right:roscommon2
+up:mayo5
+down:galway5
+
+roscommon6:
+left :roscommon4
+right: leitrim4
+up:leitrim5
+down:roscommon5
+
+roscommon2:
+left :roscommon4
+right:roscommon5
+up:roscommon6
+down:roscommon1
+
+roscommon5:
+left :roscommon2
+right:longford3
+up:roscommon6
+down:roscommon1
+
+roscommon1:
+left :galway5
+right:westmeath4
+up:roscommon2
+down:galway5
+
+
+sligo1:
+left : mayo6
+right:sligo4
+up:sea
+down:sligo2
+
+sligo4:
+left :sligo1
+right:leitrim6
+up:sea
+down:sligo2
+
+sligo3:
+left :sea
+right:sligo2
+up:sea
+down:sligo6
+
+sligo2:
+left : sligo3
+right:sligo5
+up:sligo4
+down:sligo5
+
+sligo6:
+left :mayo5
+right:sligo5
+up:sligo3
+down:mayo5
+
+sligo5:
+left :sligo6
+right:roscommon 
+up:sligo2
+down:roscommon6
+
+tipperary1 :
+left : clare4 
+right:offaly3
+up:galway2
+down:tipperary2
+
+tipperary2:
+left :tipperary5
+right:tipperary4
+up:tipperary1
+down:tipperary4
+
+tipperary5:
+left :tipperary6
+right:tipperary2
+up:tipperary2
+down:tipperary6
+
+tipperary6:
+left :limerick1 
+right:tipperary5
+up:tipperary5
+down: corkS
+
+tipperary4:
+left : tipperary2
+right:kilkenny1
+up:tipperary2
+down:tipperary3
+
+tipperary3:
+left : tipperary5
+right:kilkenny4
+up:tipperary4
+down:waterford6
+
+tyrone4:
+left : donegal3
+right:tyrone5
+up:donegal4
+down:tyrone1
+
+tyrone5:
+left :tyrone4
+right:derryC
+up:derry6
+down:tyrone6
+
+tyrone1:
+left :fermanagh5
+right:tyrone6
+up:tyrone4
+down:fermanagh4
+
+tyrone6:
+left :tyrone1
+right:tyrone2
+up:tyrone5
+down:tyrone3
+
+tyrone2:
+left :tyrone6
+right:derry5
+up:derry2
+down:tyrone3
+
+tyrone3:
+left :tyrone1
+right:armagh4
+up:tyrone2
+down:monaghan4
+
+
+waterford2:
+left :cork1
+right:waterford1
+up:tipperary6
+down:waterford4
+
+waterford6:
+left :waterford2
+right:waterford3
+up:tipperary3
+down:waterford1
+
+waterford3:
+left :waterford6
+right:sea
+up:kilkenny5
+down:sea
+
+waterford4:
+left :cork5
+right: waterford1
+up:waterford2
+down:waterford5
+
+waterford1:
+left :waterford4
+right:waterford1
+up:waterford6
+down:waterford5
+
+waterford5:
+left :waterford4
+right:sea
+up:waterford1
+down:sea
+
+westmeath4:
+left :roscommon6
+right:westmeath3
+up:longford4
+down:westmeath3
+
+westmeath3:
+left :westmeath4
+right:westmeath3
+up:westmeath3
+down:westmeath5
+
+westmeath2:
+left :westmeath3
+right:westmeath1
+up:cavan5
+down:westmeath6
+
+westmeath1:
+left : westmeath2
+right:meath5
+up:westmeath2
+down:westmeath6
+
+westmeath6:
+left :westmeath5
+right:westmeath1
+up:westmeath1
+down:offaly5
+
+westmeath5:
+left :westmeath3
+right:westmeath6
+up:westmeath3
+down:offaly1
+
+wexford2 :
+
+left :wicklow1
+right:sea
+up:wicklow6
+down:waterford6
+
+wexford6:
+left :wexford4
+right:sea
+up:wexford2
+down:wexford5
+
+wexford4:
+left :carlow3
+right: wexford5
+up:wexford6
+down:wexford3
+
+wexford5:
+left :wexford4
+right:wexford6
+up:wexford6
+down:wexford3
+
+
+wexford1:
+left : kilkenny3
+right: wexford3
+up:wexford5
+down:sea
+
+
+wexford3:
+left :wexford1
+right:sea
+up:wexford5
+down:sea
+
+
+
+wicklow3:
+left : kildare6
+right:wicklow2
+up:dublin5
+down:wicklow5
+
+wicklow2:
+left :wicklow3
+right:sea
+up:dublin1
+down:wicklow6
+
+wicklow5:
+left :kildare3
+right: wicklow3
+up:wicklow3
+down:wicklow4
+
+wicklow4:
+left :kildare3
+right:wicklow1
+up:wicklow5
+down:wicklow1
+
+wicklow1:
+left : wicklow4
+right:wicklow6
+up:wicklow2
+down:sea
+
+wicklow6:
+left :wicklow1
+right:sea
+up:wicklow2
+down:sea
