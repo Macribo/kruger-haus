@@ -203,7 +203,6 @@ $(document).ready(function() {
         case MAGIC_TREE:
           // fight();
           blockPath();
-          $('#back-to-county').fadeOut('slow');
           $('.modal').css('display', 'flex');
           // $('.btn-panel').css('display', 'none');
           $('.btn-menu').css('pointer-events', 'none');
@@ -1065,10 +1064,10 @@ function doorTroll() {
     $('#ainm').fadeOut();
     $('.modal-content').html('');
 
-    $('.modal-content').append(`<h1>Hi Guys!</h1>`);
-    $('.modal-content').append(`<h2>Congratulations!</h2>`);
+    $('.modal-content').append(`<h1>Herzliche Glückwünsche!!</h1>`);
+    $('.modal-content').append(`<h2>Hallo Leute</h2>`);
     $('.modal-content').append(
-      `<h3>This little tower is for you. But it's not quite ready yet.<br> Check back in a couple of weeks. <br><br><br>xx<br> Your pal<br><br> Ríbó</h3>`
+      `<h3>Dieser kleine Turm ist für dich. Aber es ist noch nicht ganz fertig. <br> Schau in ein paar Wochen wieder vorbei. <br><br><br>xx<br> Your pal<br><br> Ríbó</h3>`
     );
   }
 }
